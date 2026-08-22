@@ -1,0 +1,45 @@
+name: Fix checkout CTA links
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-checkout-cta.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-cta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Point purchase CTAs to onboarding checkout
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('checkoffbooks_landing.html')
+          s = p.read_text()
+          replacements = {
+            '<a href="#get-started" class="btn small">Start today for $79</a>': '<a href="https://app.checkoffbooks.com/get-started" class="btn small">Start today for $79</a>',
+            '<a href="#get-started" class="btn">Start today for $79</a>': '<a href="https://app.checkoffbooks.com/get-started" class="btn">Start today for $79</a>',
+            '<a href="mailto:hello@checkoffbooks.com?subject=Getting%20started%20-%20%2479%2Fmonth" class="btn">Start today for $79</a>': '<a href="https://app.checkoffbooks.com/get-started" class="btn">Start today for $79</a>',
+          }
+          changed = 0
+          for old, new in replacements.items():
+              count = s.count(old)
+              if count:
+                  s = s.replace(old, new)
+                  changed += count
+          if changed < 3:
+              raise SystemExit(f'Expected to update 3 CTA links, updated {changed}')
+          p.write_text(s)
+          print(f'Updated {changed} CTA links')
+          PY
+      - name: Commit CTA fix
+        run: |
+          git config user.name "CheckOff Books Bot"
+          git config user.email "luella@havenlaneadvisory.com"
+          git add checkoffbooks_landing.html
+          git commit -m "Connect website CTAs to client onboarding"
+          git push
