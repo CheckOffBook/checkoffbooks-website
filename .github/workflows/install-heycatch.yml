@@ -19,27 +19,17 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-
           path = Path('checkoffbooks_landing.html')
           text = path.read_text()
-          marker = "<style>"
-          key = "hck_pk_8BgOZ_hJ2Jy0H9JXAN3N4s2awN9xlJdx"
+          key = 'hck_pk_8BgOZ_hJ2Jy0H9JXAN3N4s2awN9xlJdx'
           if key in text:
               print('HeyCatch already installed; no change needed.')
               raise SystemExit(0)
-
-          snippet = '''<script type="module">
-  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
-  analytics.init({
-    projectKey: 'hck_pk_8BgOZ_hJ2Jy0H9JXAN3N4s2awN9xlJdx',
-    install: { framework: 'web', agent: 'other' },
-  });
-</script>
-'''
+          snippet = "<script type=\"module\">\n  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';\n  analytics.init({\n    projectKey: 'hck_pk_8BgOZ_hJ2Jy0H9JXAN3N4s2awN9xlJdx',\n    install: { framework: 'web', agent: 'other' },\n  });\n</script>\n"
+          marker = '<style>'
           if marker not in text:
               raise SystemExit('Could not find insertion point')
-          text = text.replace(marker, snippet + marker, 1)
-          path.write_text(text)
+          path.write_text(text.replace(marker, snippet + marker, 1))
           PY
       - name: Commit installation
         shell: bash
