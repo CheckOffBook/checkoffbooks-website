@@ -1,0 +1,55 @@
+name: Install HeyCatch analytics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/install-heycatch.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inject HeyCatch analytics
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('checkoffbooks_landing.html')
+          text = path.read_text()
+          marker = "<style>"
+          key = "hck_pk_8BgOZ_hJ2Jy0H9JXAN3N4s2awN9xlJdx"
+          if key in text:
+              print('HeyCatch already installed; no change needed.')
+              raise SystemExit(0)
+
+          snippet = '''<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_8BgOZ_hJ2Jy0H9JXAN3N4s2awN9xlJdx',
+    install: { framework: 'web', agent: 'other' },
+  });
+</script>
+'''
+          if marker not in text:
+              raise SystemExit('Could not find insertion point')
+          text = text.replace(marker, snippet + marker, 1)
+          path.write_text(text)
+          PY
+      - name: Commit installation
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add checkoffbooks_landing.html
+          git commit -m "Install HeyCatch analytics"
+          git push
