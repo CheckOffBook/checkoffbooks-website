@@ -1,1 +1,1 @@
-{"rewrites": [{"source": "/", "destination": "/checkoffbooks_landing.html"}]}
+{"rewrites":[{"source":"/","destination":"/checkoffbooks_landing.html"},{"source":"/privacy","destination":"/privacy.html"},{"source":"/terms","destination":"/terms.html"}]}
