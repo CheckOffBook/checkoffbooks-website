@@ -39,6 +39,34 @@
     {
       "source": "/back-taxes-bookkeeping",
       "destination": "/back-taxes-bookkeeping.html"
+    },
+    {
+      "source": "/bookkeeping-without-quickbooks",
+      "destination": "/bookkeeping-without-quickbooks.html"
+    },
+    {
+      "source": "/resources/how-to-catch-up-on-bookkeeping",
+      "destination": "/resources/how-to-catch-up-on-bookkeeping.html"
+    },
+    {
+      "source": "/resources/contractor-bookkeeping-guide",
+      "destination": "/resources/contractor-bookkeeping-guide.html"
+    },
+    {
+      "source": "/resources/bookkeeping-for-consultants-solopreneurs",
+      "destination": "/resources/bookkeeping-for-consultants-solopreneurs.html"
+    },
+    {
+      "source": "/resources/reconstruct-financial-records-for-taxes",
+      "destination": "/resources/reconstruct-financial-records-for-taxes.html"
+    },
+    {
+      "source": "/resources/cash-basis-vs-accrual-small-business",
+      "destination": "/resources/cash-basis-vs-accrual-small-business.html"
+    },
+    {
+      "source": "/resources/cost-of-accounting-software-small-business",
+      "destination": "/resources/cost-of-accounting-software-small-business.html"
     }
   ]
 }
