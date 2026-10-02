@@ -23,6 +23,22 @@
     {
       "source": "/statement-based-bookkeeping",
       "destination": "/statement-based-bookkeeping.html"
+    },
+    {
+      "source": "/catch-up-bookkeeping",
+      "destination": "/catch-up-bookkeeping.html"
+    },
+    {
+      "source": "/bookkeeping-for-contractors",
+      "destination": "/bookkeeping-for-contractors.html"
+    },
+    {
+      "source": "/bookkeeping-for-consultants",
+      "destination": "/bookkeeping-for-consultants.html"
+    },
+    {
+      "source": "/back-taxes-bookkeeping",
+      "destination": "/back-taxes-bookkeeping.html"
     }
   ]
 }
