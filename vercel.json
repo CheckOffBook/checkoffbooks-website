@@ -5,6 +5,10 @@
       "destination": "/checkoffbooks_landing.html"
     },
     {
+      "source": "/free-trial",
+      "destination": "/free-trial.html"
+    },
+    {
       "source": "/about",
       "destination": "/about.html"
     },
