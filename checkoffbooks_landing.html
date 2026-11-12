@@ -118,6 +118,13 @@
     padding: 6px 12px; border-radius: 100px; background: var(--blue-tint); color: var(--blue-dark);
   }
 
+  /* free-trial announcement */
+  .trial-bar { background: var(--ink); color: #fff; text-align: center; font-size: 14.5px; padding: 10px 16px; }
+  .trial-bar a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; margin-left: 6px; white-space: nowrap; }
+  .trial-bar strong { color: #9ec2ff; }
+  .alt-link { display: block; margin-top: 14px; font-size: 14px; color: var(--ink-soft); }
+  .alt-link a { color: var(--blue-dark); font-weight: 600; }
+
   /* hero */
   .hero { padding: 70px 0 40px; }
   .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
@@ -274,6 +281,8 @@
   }
 </style>
 
+<div class="trial-bar"><strong>Free trial:</strong> 1 account, 1 month of bookkeeping, no credit card. New clients through December 31, 2026.<a href="/free-trial">Start free &rarr;</a></div>
+
 <header>
   <div class="wrap nav">
     <a href="#top" class="brand"><img src="/checkoffbooks-logo-email.png" alt="CheckOff Books" style="height:34px; width:auto; display:block;"></a>
@@ -282,7 +291,7 @@
       <a href="/statement-based-bookkeeping">Our service</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="https://app.checkoffbooks.com/get-started" class="btn small">Start today for $79</a>
+    <a href="/free-trial" class="btn small">Start today for free</a>
   </div>
 </header>
 
@@ -290,7 +299,7 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="badge">✓ Review-ready in 5 business days</span>
+        <span class="badge">✓ Try it free: 1 account, 1 month</span>
         <h1>Paying for bookkeeping software... and still doing the bookkeeping?</h1>
         <p class="lede">Upload your bank and credit-card statements. We categorize and reconcile everything and send back a clean, cash-basis Profit &amp; Loss in 5 business days. No bank linking. No software. No bookkeeping homework.</p>
         <p class="fit-note">
@@ -298,10 +307,10 @@
           <span><strong>Built for small businesses.</strong></span>
         </p>
         <div class="hero-ctas">
-          <a href="https://app.checkoffbooks.com/get-started" class="btn">Start today for $79</a>
+          <a href="/free-trial" class="btn">Start today for free</a>
           <a href="#how" class="btn outline">See how it works</a>
         </div>
-        <p class="hero-fineprint">$79/month, up to 3 accounts. PDF or CSV only — no bank login ever required. Balance Sheet available on request.</p>
+        <p class="hero-fineprint">Free trial: one statement (your most recent full month) for one account, no credit card. After that, $79/month for up to 3 accounts. PDF or CSV only — no bank login ever required. Balance Sheet available on request.</p>
       </div>
 
       <div class="compare-card">
@@ -473,10 +482,11 @@
 
   <section class="cta-band" id="get-started">
     <div class="wrap">
-      <span class="badge" style="margin-bottom: 14px;">Start today</span>
-      <h2>Get started for $79/month</h2>
-      <p>Upload up to 3 accounts and get a review-ready, cash-basis Profit &amp; Loss in 5 business days — no account linking, no software to learn.</p>
-      <a href="https://app.checkoffbooks.com/get-started" class="btn">Start today for $79</a>
+      <span class="badge" style="margin-bottom: 14px;">Free trial · 1 account · 1 month</span>
+      <h2>Try it free, then $79/month</h2>
+      <p>Send one statement for one account and get a review-ready, cash-basis Profit &amp; Loss in 5 business days — no credit card, no account linking, no software to learn.</p>
+      <a href="/free-trial" class="btn">Start today for free</a>
+      <span class="alt-link">Ready to go now? <a href="https://app.checkoffbooks.com/get-started">Skip the trial and start your subscription</a>.</span>
       <div class="pricing-detail">
         <p><strong>$79/month</strong> — up to 3 accounts, PDF or CSV only. That's the price for as long as you stay; it never goes up.</p>
         <p><strong>Need more than 3?</strong> $10/month for each additional account.</p>
