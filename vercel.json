@@ -71,6 +71,22 @@
     {
       "source": "/resources/cost-of-accounting-software-small-business",
       "destination": "/resources/cost-of-accounting-software-small-business.html"
+    },
+    {
+      "source": "/resources/monthly-bookkeeping-services-cost",
+      "destination": "/resources/monthly-bookkeeping-services-cost.html"
+    },
+    {
+      "source": "/resources/year-end-bookkeeping-checklist",
+      "destination": "/resources/year-end-bookkeeping-checklist.html"
+    },
+    {
+      "source": "/resources/what-small-business-bookkeeping-services-include",
+      "destination": "/resources/what-small-business-bookkeeping-services-include.html"
+    },
+    {
+      "source": "/resources/bookkeeping-from-bank-statements",
+      "destination": "/resources/bookkeeping-from-bank-statements.html"
     }
   ]
 }
