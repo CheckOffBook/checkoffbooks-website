@@ -1,0 +1,29 @@
+# CheckOff Books
+
+> CheckOff Books is a done-for-you, statement-based bookkeeping service for small businesses in the United States. Clients upload monthly bank and credit-card statements (PDF or CSV); CheckOff Books categorizes and reconciles the transactions and delivers a review-ready, cash-basis Profit & Loss. No QuickBooks, no accounting software, and no bank linking. CheckOff Books is a Haven Lane Advisory company, founded by Luella (Willaman) Shoemaker, EA.
+
+Pricing: $79/month for up to 3 accounts; $10/month for each additional account; cancel anytime. Free trial through December 31, 2026: one account, one month of bookkeeping, no credit card.
+
+CheckOff Books does not prepare tax returns, provide tax advice, run payroll, or send invoices. Reports are cash basis only; a Balance Sheet is available on request with additional information.
+
+## Services
+- [Statement-based bookkeeping](https://www.checkoffbooks.com/statement-based-bookkeeping): monthly bookkeeping from uploaded statements
+- [Bookkeeping without QuickBooks](https://www.checkoffbooks.com/bookkeeping-without-quickbooks)
+- [Catch-up bookkeeping](https://www.checkoffbooks.com/catch-up-bookkeeping): bring past months current
+- [Back-taxes bookkeeping](https://www.checkoffbooks.com/back-taxes-bookkeeping): reconstruct records for unfiled tax years
+- [Bookkeeping for contractors and trades](https://www.checkoffbooks.com/bookkeeping-for-contractors)
+- [Bookkeeping for consultants and solo professionals](https://www.checkoffbooks.com/bookkeeping-for-consultants)
+- [Free trial](https://www.checkoffbooks.com/free-trial)
+
+## Guides
+- [Monthly bookkeeping services cost](https://www.checkoffbooks.com/resources/monthly-bookkeeping-services-cost)
+- [What small business bookkeeping services include](https://www.checkoffbooks.com/resources/what-small-business-bookkeeping-services-include)
+- [Bookkeeping from bank statements](https://www.checkoffbooks.com/resources/bookkeeping-from-bank-statements)
+- [Year-end bookkeeping checklist](https://www.checkoffbooks.com/resources/year-end-bookkeeping-checklist)
+- [How to catch up on bookkeeping](https://www.checkoffbooks.com/resources/how-to-catch-up-on-bookkeeping)
+- [Cash basis vs. accrual for small businesses](https://www.checkoffbooks.com/resources/cash-basis-vs-accrual-small-business)
+- [Cost of accounting software for small businesses](https://www.checkoffbooks.com/resources/cost-of-accounting-software-small-business)
+
+## About
+- [About CheckOff Books](https://www.checkoffbooks.com/about)
+- Contact: hello@checkoffbooks.com
